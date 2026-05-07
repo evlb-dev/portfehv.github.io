@@ -1,5 +1,6 @@
 import { ActionError, defineAction } from "astro:actions";
-import { MY_EMAIL, RESEND_API_KEY } from "astro:env/server";
+const MY_EMAIL = import.meta.env.MY_EMAIL;
+const RESEND_API_KEY = import.meta.env.RESEND_API_KEY;
 import { z } from "astro:schema";
 import { Resend } from "resend";
 import SERVICES from "../assets/collections/services.json";
