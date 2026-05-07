@@ -1,12 +1,6 @@
-import { defineConfig } from "astro/config";
-import tailwindcss from "@tailwindcss/vite";
-import vercel from "@astrojs/vercel";
+import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site:"https://portfehv.github.io",
-  vite: {
-    plugins: [tailwindcss()],
-  },
-  output: "server",
-  adapter: vercel(),
+  site: 'https://evlb-dev.github.io',
+  base: '/portfehv.github.io'
 });
